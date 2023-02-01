@@ -137,6 +137,10 @@ section{
    color:var(--white);
 }
 
+.header .flex .logo a:hover{
+   color:var(--green);
+}
+
 .header .flex .navbar a{
    margin-left: 2rem;
    color:var(--light-white);
@@ -196,7 +200,14 @@ section{
    line-height: 1;
 }
 
-.home .row .content h4 span{
+.home .row .content h5{
+   margin-bottom: 1rem;
+   font-size: 5rem;
+   color:var(--white);
+   line-height: 1;
+}
+
+.home .row .content span{
    color:var(--green);
 }
 
