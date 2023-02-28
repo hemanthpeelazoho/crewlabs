@@ -23,9 +23,9 @@
   }
   
   .slide {
-    display: block;
+    display: none;
     height: 100%;
-    position: relative;
+    position: absolute;
     width: 100%;
   }
   
