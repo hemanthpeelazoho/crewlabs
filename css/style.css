@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 
 :root{
    --green:#00E77F;
@@ -9,13 +9,13 @@
 }
 
 *{
-   font-family: 'Rubik', sans-serif;
+   font-family: 'Roboto', serif;
    margin:0; padding:0;
    box-sizing: border-box;
    outline: none; border:none;
    text-decoration: none;
    transition: .2s linear;
-   text-transform: capitalize;
+   
 }
 
 *::selection{
@@ -174,6 +174,10 @@ section{
    text-align: center;
 }
 
+.home .row .content p{
+   font-size: x-large;
+}
+
 .home .row .image{
    flex:1 1 40rem;
 }
@@ -269,14 +273,20 @@ section{
    color:var(--white);
 }
 
-.about .row .content p{
-   padding:1rem 0;
-   line-height: 2;
-   font-size: 1.6rem;
-   color:var(--light-white);
+.about .row .content .content-table{
+   color:var(--white);
+   font-size: 1.55rem;
+   text-align: justify;
+   line-height: 1.55;
 }
 
-.courses .slide{
+.about .row .content span{
+   color:var(--green);
+   font-size: 1.75rem;
+   text-align: left;
+}
+
+.courses .cslide{
    background-color: var(--light-bg);
    border-radius: .5rem;
    text-align: center; 
@@ -285,18 +295,18 @@ section{
    user-select: none;
 }
 
-.courses .slide img{
+.courses .cslide img{
    height: 25rem;
    width: 100%;
 }
 
-.courses .slide h3{
+.courses .cslide h3{
    margin:1.5rem 0;
    font-size: 2rem;
    color:var(--white);
 }
 
-.courses .slide p{
+.courses .cslide p{
    line-height: 2;
    font-size: 1.6rem;
    color:var(--light-white);
@@ -308,93 +318,6 @@ section{
  
 .swiper-pagination-bullet-active{
    background-color: var(--green);
-}
-
-.labs .slide{
-   position: relative;
-   overflow: hidden;
-   margin-bottom: 4rem;
-   user-select: none;
-}
-
-.labs .slide img{
-   height: 55rem;
-   width: 100%;
-   object-fit: cover;
-   border-radius: .5rem;
-}
-
-.labs .slide h3{
-   margin-top: 1.5rem;
-   font-size: 2rem;
-   text-align: center;
-   color:var(--white);
-}
-
-.labs .slide .share{
-   position: absolute;
-   top:1rem; left:-10rem;
-}
-
-.labs .slide:hover .share{
-   left: 2rem;
-}
-
-.labs .slide .share a{
-   display: block;
-   margin-top: 1rem;
-   height: 4.5rem;
-   width: 4.5rem;
-   line-height: 4.5rem;
-   border-radius: .5rem;
-   background-color: var(--white);
-   color:var(--black);
-   text-align: center;
-   font-size: 2rem;
-}
-
-.labs .slide .share a:hover{
-   background-color: var(--green);
-   color:var(--white);
-}
-
-.reviews-slider .slide{
-   border-radius: .5rem;
-   background-color: var(--light-bg);
-   padding:2rem;
-   margin-bottom: 4rem;
-   user-select: none;
-}
-
-.reviews-slider .slide p{
-   line-height: 2;
-   font-size: 1.6rem;
-   color:var(--light-white);
-}
-
-.reviews-slider .slide .user{
-   display: flex;
-   align-items: center;
-   gap:1.5rem;
-   margin-top: 1.5rem;
-}
-
-.reviews-slider .slide .user img{
-   height: 7rem;
-   width: 7rem;
-   border-radius: 50%;
-   object-fit: cover;
-}
-
-.reviews-slider .slide .user h3{
-   font-size: 2rem;
-   color:var(--white);
-   margin-bottom: .7rem;
-}
-
-.reviews-slider .slide .user .stars i{
-   font-size: 1.5rem;
-   color:var(--green);
 }
 
 .contact .row{
@@ -564,7 +487,11 @@ section{
    .home .row .content h3{
       font-size: 6rem;
    }
-
+   
+   .content p{
+      text-align: left;
+      font-size: medium;
+   }
 }
 
 @media (max-width:450px){
